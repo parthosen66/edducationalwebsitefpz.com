@@ -18,3 +18,10 @@ a{position: relative;font-size: 30px;margin-left: 350px;}
 a:link{color:aliceblue ;}
 a:visited{color: blueviolet;}
 a:hover{color: yellow;}
+
+    @media screen and (max-width:500px) and (min-width:400px)
+    {.main{
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+    } }
