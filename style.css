@@ -1,27 +1,46 @@
 *{margin: 0px;
 padding: 0px;
 box-sizing: border-box;}
+.main{
+     border: 5px solid violet;}
+header{background-color: rgb(44, 41, 38);height: 60px;position: relative;}
 
-header{background-color: rgb(44, 41, 38);height: 60px;}
-
-h2{color: aliceblue;}
+h2{color: aliceblue;position: relative;}
 h1{color: rgb(230, 220, 176);
     position: relative;
     text-align: center;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 nav{background-color: rgb(114, 93, 91);height: 40px;border: 3px solid black;box-sizing: border-box;display: flex;
-    gap: 50px;border: 2px solid rgb(163, 33, 33);}
+    gap: 50px;border: 2px solid rgb(163, 33, 33);position: relative;}
 
-img{height: 850px;width:1900px;}
+img{height: 850px;width:1900px;position: relative;}
 
 a{position: relative;font-size: 30px;margin-left: 350px;}
 a:link{color:aliceblue ;}
 a:visited{color: blueviolet;}
 a:hover{color: yellow;}
+body{position: relative;}
+.i{position: relative;}
 
-@media screen and (max-width:500px) and (min-width:400px)
-    {.main{
-        background-color: aliceblue;
-        display: flex;
-        flex-direction: column;
-    } }
+
+    /* Tablet & below */
+@media (max-width: 768px) {
+    .main {display: flex;
+           flex-direction: column;
+           padding: 20px;}
+ }
+
+/* Phone */
+@media (max-width: 600px) {
+     .main {display: flex;
+           flex-direction: column;
+           padding: 20px;}
+    
+ }
+
+/* Small phone */
+@media (max-width: 400px) { 
+     .main {display: flex;
+           flex-direction: column;
+           padding: 20px;}
+}
