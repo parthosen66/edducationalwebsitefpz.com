@@ -2,45 +2,77 @@
 padding: 0px;
 box-sizing: border-box;}
 .main{
-     border: 5px solid violet;}
-header{background-color: rgb(44, 41, 38);height: 60px;position: relative;}
+     border: 5px solid rgb(89, 89, 193);}
+header{background-color: rgb(44, 41, 38);height: 60px;position: relative;height: 100%;width: 100%;}
 
 h2{color: aliceblue;position: relative;}
 h1{color: rgb(230, 220, 176);
     position: relative;
     text-align: center;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-nav{background-color: rgb(114, 93, 91);height: 40px;border: 3px solid black;box-sizing: border-box;display: flex;
-    gap: 50px;border: 2px solid rgb(163, 33, 33);position: relative;}
+nav{background-color: rgb(114, 93, 91);height: 40px;border: 3px solid black;
+    gap: 0px;border: 2px solid rgb(163, 33, 33);}
 
-img{height: 850px;width:1900px;position: relative;}
+img{overflow: hidden;height:799px;width:100%;}
 
-a{position: relative;font-size: 30px;margin-left: 350px;}
+a{position: relative;font-size: 30px;margin-left: 400px;}
 a:link{color:aliceblue ;}
 a:visited{color: blueviolet;}
 a:hover{color: yellow;}
-body{position: relative;}
-.i{position: relative;}
+.i{border: 10px solid rgb(201, 31, 31);height: 800px;width:100% ;}
+
+   
 
 
     /* Tablet & below */
 @media (max-width: 768px) {
     .main {display: flex;
            flex-direction: column;
-           padding: 20px;}
+           } ;
+           nav {display: flex;
+           flex-direction: column;height: fit-content;gap:10px
+            ;justify-content: left;text-align: left
+           
+           } ;
+            nav a {
+           margin-left:0 px;gap:10px
+           
+         ;justify-content: left;margin: 0px;margin: 0px; } 
+
  }
 
 /* Phone */
 @media (max-width: 600px) {
      .main {display: flex;
            flex-direction: column;
-           padding: 20px;}
-    
+           
+           }
+     nav {display: flex;
+           flex-direction: column;margin-left:0 px;height: fit-content;gap:10px
+           
+         ;justify-content: left  } 
+        nav  a {
+           margin-left:0 px;gap:10px
+           
+         ;justify-content: left;margin: 0px; } 
  }
+ 
 
 /* Small phone */
 @media (max-width: 400px) { 
      .main {display: flex;
            flex-direction: column;
-           padding: 20px;}
+           }
+            nav {display: flex;
+           flex-direction: column;margin-left:0 px ;height: fit-content;gap:10px
+           
+         ;justify-content: left;text-align: left
+
+           } ;
+            nav a {
+           margin-left:0 px;gap:10px
+           
+         ;justify-content: left;margin: 0px; } 
+ }
+
 }
